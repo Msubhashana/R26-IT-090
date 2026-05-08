@@ -1,8 +1,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
     <application
         android:label="fixmate_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+        <!-- ✅ PASTE YOUR GOOGLE MAPS API KEY BELOW — REPLACE THE VALUE -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCR-3a4_Git0cykXW5EIw9QnRXj5OuseUQ"/>
+        <!-- ✅ END OF API KEY SECTION -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
